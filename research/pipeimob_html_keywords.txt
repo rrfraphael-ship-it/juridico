@@ -1,0 +1,4 @@
+s="flex flex-col gap-0.5"><h2 class="venda-fluxo-title">CCV Conjurer</h2><nav data-slot="breadcrumb" aria-label="breadcrumb" class=""><ol class="flex h-9 items-center"><li class="flex item
+-medium tracking-[0.5px] underline" aria-current="page">CCV Conjurer</span></li></ol></nav></div></div></div><iframe class="venda-fluxo-iframe" src="https://pipeimob.com.br/ifr-fluxos?agen
+186100&amp;t=1684466124899x319236176449641860&amp;fluxo=ccv_conjurer&amp;abrir=true&amp;open=1" title=""></iframe></div><div class="cobr-edit-backdrop"></div><aside class="cobr-edit-drawer
+r%2Fvendas%2F1684466124899x319236176449641860%3Ffluxo%3Dccv_conjurer&amp;inline=false&amp;isFullscreen=false&amp;globalCookieOptOut=&amp;isFirstVisitorSession=false&amp;isAttachmentDisable

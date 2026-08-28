@@ -1,0 +1,2 @@
+ALTER TABLE `contract_templates` ADD `contractType` varchar(120) DEFAULT 'Contrato imobiliário' NOT NULL;--> statement-breakpoint
+ALTER TABLE `contracts` ADD `contractType` varchar(120) DEFAULT 'Contrato imobiliário' NOT NULL;

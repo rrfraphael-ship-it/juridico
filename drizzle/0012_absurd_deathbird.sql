@@ -1,0 +1,2 @@
+ALTER TABLE `deal_parties` MODIFY COLUMN `role` enum('comprador','vendedor','locador','locatario','procurador','corretor','parceiro','outro') NOT NULL;--> statement-breakpoint
+ALTER TABLE `deal_parties` ADD `commissionAmount` bigint;

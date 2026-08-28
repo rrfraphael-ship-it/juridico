@@ -1,0 +1,156 @@
+# Project TODO
+
+- [x] Modelar tabelas para negócios, intakes, partes, modelos de contrato, documentos, certidões, obrigações, biblioteca jurídica, mensagens do copiloto e configurações.
+- [x] Criar a navegação lateral persistente com Visão Geral, Negócios, Copiloto Jurídico, Obrigações, Arquivo e Configurações.
+- [x] Implementar a Visão Geral com indicadores vazios, lista de negócios em andamento e ações de criar negócio ou gerar link de intake.
+- [x] Implementar intake público e compartilhável que cria ou atualiza os dados de um negócio sem dados fictícios.
+- [x] Implementar a lista de negócios ativos com filtros, etapas, prazos e acesso ao painel individual.
+- [x] Implementar o painel do negócio com visão de intakes, contrato, due diligence e painel compartilhável do cliente.
+- [x] Implementar o elaborador de contratos com modelos selecionáveis, campos dinâmicos, edição de minuta e controle de revisões.
+- [x] Implementar a due diligence com checklist de certidões, anexação segura de documentos e sincronização com o dossiê do cliente.
+- [x] Implementar o painel público do cliente, protegido por token, para acompanhamento e consulta do dossiê.
+- [x] Implementar o Copiloto Jurídico com agentes de venda, locação e due diligence, conectado à biblioteca jurídica e ao modelo de linguagem no servidor.
+- [x] Implementar Obrigações com prazos, estados, vínculos com negócios e alertas de proximidade.
+- [x] Implementar Arquivo com consulta de processos finalizados e métricas consolidadas.
+- [x] Implementar Configurações para modelos contratuais, biblioteca jurídica, acessos, alertas e integrações.
+- [x] Preparar notificações automáticas de obrigações e prazos com execução recorrente após a publicação do site.
+- [x] Criar testes unitários do domínio e dos procedimentos críticos.
+- [x] Validar visualmente as rotas principais em desktop e mobile, revisar a lista de tarefas e salvar a primeira versão do projeto.
+- [x] Modelar análises de risco por IA para certidões e notificações operacionais vinculadas ao negócio.
+- [x] Implementar leitura assistida por IA de certidões anexadas, com resumo, achados e riscos destacados na Due Diligence.
+- [x] Adicionar barra visual de progresso no painel do negócio para as etapas do contrato e da due diligence.
+- [x] Criar central de notificações no painel principal para intakes recebidos, prazos próximos e ações pendentes.
+- [x] Criar testes e validar visualmente os recursos de risco, progresso e notificações.
+- [x] Modelar links seguros de revisão de minuta e comentários do cliente vinculados à versão contratual.
+- [x] Adicionar exportação no elaborador de contratos para criar e copiar um link seguro de revisão.
+- [x] Criar portal público de revisão da minuta com leitura, comentários e confirmação de envio ao operador.
+- [x] Exibir os comentários recebidos no processo, gerar notificação operacional e validar o fluxo com testes.
+- [x] Cancelado — modelar dados de convite por e-mail; o compartilhamento permanecerá exclusivamente por link seguro.
+- [x] Cancelado — adicionar modal de convite por e-mail no elaborador de contratos.
+- [x] Permitir que o cliente selecione um trecho da minuta e envie um comentário vinculado a essa seleção.
+- [x] Adicionar aprovação final do cliente com confirmação explícita e status visível ao operador.
+- [x] Gerar notificações, cobertura de testes e validação visual dos novos fluxos de revisão.
+- [x] Confirmar que o fluxo de revisão continua exclusivamente por link seguro, sem dependência de envio por e-mail.
+- [x] Modelar metadados e armazenamento seguro de arquivo Word vinculado ao modelo contratual.
+- [x] Adicionar nas Configurações o envio de arquivos DOCX como modelos de contrato.
+- [x] Exibir o arquivo Word anexado no modelo e disponibilizá-lo no elaborador de contratos.
+- [x] Testar a validação de formato e tamanho do arquivo Word e publicar a atualização.
+- [x] Analisar o fluxo de elaboração de contratos por tópicos do Pipeimob como referência para uma futura evolução do elaborador.
+- [x] Modelar tópicos jurídicos, respostas e mapeamento automático a partir do intake e da due diligence.
+- [x] Implementar no elaborador uma navegação por Partes, Objeto, Compromisso, Preço, Posse, Título, Comissões, Cominações, Foro e Formatações.
+- [x] Preencher e sinalizar automaticamente os tópicos com dados do intake, do dossiê e das certidões da diligência.
+- [x] Gerar e disponibilizar para download um arquivo Word final a partir da minuta consolidada.
+- [x] Criar testes de mapeamento e exportação DOCX para a jornada guiada.
+- [x] Validar visualmente a interface da jornada guiada e os estados automáticos disponíveis no negócio existente, sem inserir dados de demonstração.
+- [ ] Validar o preenchimento visual dos tópicos de diligência em um negócio real que tenha intake e certidões anexadas.
+- [x] Mapear os módulos e jornadas operacionais observáveis no Pipeimob.
+- [x] Analisar padrões de produto, experiência e gestão de transações do Pipeimob.
+- [x] Comparar o Pipeimob com o ImobLegal e priorizar oportunidades de incorporação.
+- [x] Redigir e entregar relatório estratégico com referências e recomendações práticas.
+- [x] Permitir acesso direto à aba de tópicos jurídicos por URL para facilitar validação e compartilhamento interno.
+- [x] Modelar a esteira jurídico-operacional com marcos, tarefas, responsáveis, SLAs e eventos auditáveis.
+- [x] Implementar a matriz de completude da minuta, destacando dados ausentes, inconsistentes e pontos sensíveis por tópico.
+- [x] Implementar kits de diligência reutilizáveis para compra e venda e locação, com regras de aplicabilidade.
+- [x] Estruturar o dossiê por categorias, partes, imóvel, certidões, contrato, fechamento e permissões de visualização.
+- [x] Criar catálogo de exceções jurídicas com justificativa, alçada de aprovação e vínculo aos tópicos da minuta.
+- [x] Evoluir o portal do cliente com marcos públicos, ações solicitadas e política de visibilidade documental.
+- [x] Preparar assinatura interna com documento, signatários, ordem, prazo, status e retorno ao dossiê; integração externa adiada.
+- [x] Adiado — configurar e validar a conexão real com a Clicksign para criação e acompanhamento dos envelopes de assinatura.
+- [x] Manter a preparação interna de envelope, signatários e retorno ao dossiê sem envio a provedor externo.
+- [x] Validar os fluxos P0/P1, documentar as dependências adiadas de P2/P3 e publicar a atualização.
+- [x] Adicionar responsável, vencimento de SLA e evidência visual de atribuição nas ações da esteira.
+- [x] Cobrir kits de venda e locação com regras de aplicabilidade e testes automatizados.
+- [x] Tornar as categorias do dossiê verificáveis para partes, imóvel, certidões, contrato e fechamento, com visibilidade controlada.
+- [x] Implementar alçadas de aprovação das exceções jurídicas e verificar seus limites por nível de risco.
+- [x] Mapear os campos obrigatórios do intake e o contrato padrão aplicável a cada tipo de transação.
+- [x] Exigir preenchimento completo das informações essenciais do intake antes da elaboração da minuta.
+- [x] Remover o editor livre da navegação e consolidar a edição somente nos tópicos jurídicos.
+- [x] Adicionar reescrita por IA de cada tópico, usando intake, diligência e texto do contrato padrão.
+- [ ] Validar no negócio 30001 a jornada completa após o preenchimento real do intake, a criação da minuta e a reescrita de um tópico por IA.
+- [x] Mapear requisitos jurídicos, de edição e governança para o conector documental do ImobLegal.
+- [x] Pesquisar Google Docs, Microsoft Word/Graph, OnlyOffice, Collabora e APIs especializadas para edição de contratos.
+- [x] Comparar custo, segurança, colaboração, fidelidade DOCX, integrações e esforço de implementação.
+- [x] Entregar recomendação arquitetural e plano de adoção para o editor contratual.
+- [x] Aplicar o fluxo reformulado ao negócio 30001 sem inserir dados fictícios, preservando o bloqueio até o intake estar completo.
+- [x] Corrigir o envio do intake contratual para não submeter campos vazios, e-mail inválido ou telefone incompleto.
+- [x] Exibir no formulário mensagens de preenchimento por campo, em linguagem clara, antes de chamar o servidor.
+- [x] Criar teste de regressão para o estado de intake parcial e publicar a correção.
+- [x] Analisar a referência tipográfica do shadcn/ui e o tema atual do ImobLegal.
+- [x] Substituir a combinação de fontes por uma hierarquia sans-serif alinhada ao shadcn/ui.
+- [x] Corrigir a aplicação da tipografia Geist na folha de estilos publicada e revalidar em produção.
+- [x] Renomear a etapa e a aba de intake para Dados do negócio, distinguindo-a claramente do link opcional ao corretor.
+- [x] Disponibilizar no painel do negócio o formulário completo de Dados do negócio, editável e integrado aos requisitos de cada transação.
+- [x] Salvar automaticamente alterações válidas dos Dados do negócio, com estado visível de salvamento e preservação da edição manual.
+- [x] Reutilizar o mesmo formulário no link compartilhável ao corretor, sem alterar seu caráter opcional.
+- [x] Criar testes comportamentais de salvamento automático dos Dados do negócio para os fluxos interno e compartilhável.
+- [ ] Validar no navegador os estados de salvando, salvo e erro do formulário público por link seguro.
+- [ ] Concluir a cobertura do salvamento automático e da nomenclatura após evidenciar os fluxos interno e compartilhável.
+- [x] Remover do formulário de Dados do negócio a identificação de responsável pelo input.
+- [x] Permitir adicionar e remover vendedores dinamicamente nos Dados do negócio.
+- [x] Permitir adicionar e remover compradores dinamicamente nos Dados do negócio.
+- [x] Adicionar parceiros com identificação e valor de comissão, integrados ao salvamento automático.
+- [ ] Validar no navegador, sem dados fictícios, os fluxos de adicionar e remover vendedor, comprador e parceiro nos Dados do negócio.
+- [ ] Validar no navegador que o autosave persiste corretamente listas dinâmicas de partes e comissão de parceiro nos modos interno e compartilhável.
+- [ ] Concluir a validação da edição dinâmica de partes e comissões após os fluxos comportamentais.
+- [x] Permitir anexar arquivos ao Copiloto Jurídico para análise assistida com armazenamento seguro.
+- [x] Extrair conteúdo de anexos compatíveis e disponibilizá-lo como contexto explícito da conversa.
+- [x] Criar o agente Comparador de Minutas para confrontar duas minutas e destacar alterações relevantes.
+- [x] Criar uma interface de comparação com dois arquivos, resumo de diferenças e ressalva de revisão humana.
+- [x] Cobrir com testes os limites de arquivo, o agente comparador e os estados de análise.
+- [ ] Validar o envio e a comparação de duas minutas reais no Copiloto, mantendo a revisão jurídica humana.
+- [ ] Adicionar testes diretos da mutation de upload do Copiloto para persistência e retorno esperado.
+- [ ] Adicionar testes diretos da mutation de upload do Copiloto para falhas de validação ou extração e mensagem tRPC.
+- [ ] Adicionar testes do comparador para seleção inválida, anexos ausentes e comparação bem-sucedida.
+- [ ] Validar os estados visíveis de carregando, erro, comparação em andamento e resultado na interface do Copiloto.
+- [x] Criar uma Central de Propostas como item permanente da navegação principal.
+- [x] Modelar propostas imobiliárias com imóvel, valor, fluxo e forma de pagamento, futuras partes e status.
+- [x] Permitir que operador e corretor criem e editem propostas sem transformar dados em negócio prematuramente.
+- [x] Gerar links seguros e compartilháveis para apresentação e manifestação das futuras partes.
+- [x] Converter uma proposta aceita em negócio, preservando os dados preenchidos para os Dados do negócio.
+- [ ] Validar o ciclo completo de uma proposta real, compartilhamento, manifestação e conversão em negócio, sem criar dados fictícios.
+- [x] Implementar link seguro para o corretor criar e editar uma proposta, com salvamento de rascunho independente do negócio.
+- [ ] Adicionar testes e validação visual do fluxo de proposta criado ou editado pelo corretor.
+- [x] Adicionar ação por proposta existente para gerar e copiar o link seguro de edição pelo corretor.
+- [ ] Validar a geração e o reaproveitamento do link do corretor vinculado a proposta existente, sem conversão em negócio.
+- [x] Bloquear edição do corretor após o compartilhamento da proposta e reiniciar a manifestação quando o operador revisar condições enviadas.
+- [x] Adicionar uma lista estruturada de formas de pagamento às Condições da compra e venda nos Dados do negócio.
+- [x] Exibir após o preço o botão Adicionar forma de pagamento, com campos de valor e descrição por parcela ou pagamento.
+- [x] Levar as formas de pagamento preenchidas aos tópicos jurídicos e à exportação da minuta.
+- [x] Validar no navegador, sem dados fictícios persistidos, a adição e a remoção de formas de pagamento nos Dados do negócio.
+- [x] Cobrir com teste comportamental a adição, remoção e serialização das formas de pagamento no payload salvo.
+- [x] Exibir, para cada tópico jurídico, os Dados do negócio relevantes em uma área superior de referência somente leitura, preservando a fonte canônica na aba Dados do negócio.
+- [x] Manter abaixo o texto-base completo e manualmente editável da cláusula ou capítulo selecionado.
+- [x] Preparar por tópico uma mesclagem assistida que altere somente informações negociadas, preservando estrutura, coerência e linguagem jurídica.
+- [x] Permitir que o operador aplique, descarte ou refine o texto sugerido antes de salvar a minuta.
+- [x] Cobrir regras de contexto e integridade da mesclagem por IA com testes e validar a nova área de edição sem dados fictícios.
+- [ ] Validar com Dados do negócio e minuta reais uma sugestão de IA, sua revisão pelo operador e a aplicação deliberada em um tópico.
+- [x] Permitir definir, por contrato dentro do negócio, o tipo de contrato e o modelo padrão anexado que servirão de base.
+- [x] Exibir no painel do negócio uma seleção explícita do contrato ativo para elaboração por tópicos.
+- [x] Aplicar os Dados do negócio, o contexto e as sugestões de IA somente ao contrato selecionado.
+- [x] Preservar contratos e minutas já existentes ao adicionar ou alterar outro contrato no mesmo negócio.
+- [x] Cobrir a seleção e o isolamento por contrato com testes e validação visual sem dados fictícios.
+- [x] Pesquisar as certidões e os documentos normalmente exigidos na diligência de compra e venda imobiliária, com fontes oficiais por esfera.
+- [x] Criar fichas de certidão com finalidade, emissão oficial, upload seguro e visualização posterior do arquivo anexado.
+- [x] Incluir seleção de UF para fontes estaduais e manter a emissão municipal configurável conforme a localidade do imóvel.
+- [x] Organizar ao final da diligência uma área de anexos para documentos das partes, certidões municipais, condomínio e documentos complementares.
+- [x] Preservar os arquivos no dossiê do negócio e no painel do cliente de acordo com a visibilidade definida.
+- [x] Cobrir e validar a matriz documental, as URLs, os uploads e a visualização sem inserir documentos fictícios.
+- [ ] Validar com certidões reais os links de emissão, o upload, a visualização, a leitura assistida e a classificação no dossiê antes de uso operacional.
+- [x] Implementar configuração de município e URL oficial de emissão para a certidão municipal do imóvel.
+- [ ] Adicionar testes diretos da ativação de ficha, upload seguro, persistência de fonte/UF, classificação e visualização documental.
+- [ ] Validar de modo reversível no navegador o upload e a visualização de uma ficha catalogada e de um anexo complementar, sem manter documentos fictícios.
+- [ ] Adicionar teste direto da sugestão de IA garantindo contexto e cláusula vinculados ao contrato selecionado.
+- [ ] Adicionar teste comportamental de criação e edição de múltiplas minutas que preserve contratos existentes no mesmo negócio.
+- [ ] Validar visualmente a troca entre dois contratos existentes sem persistir dados fictícios.
+- [x] Tornar a escolha de modelo cadastrado em Configurações explícita ao iniciar a minuta de cada negócio.
+- [x] Identificar os tópicos do modelo que recebem Dados do negócio e destacá-los para edição contextual por IA.
+- [x] Preservar os capítulos do modelo sem dados aplicáveis, sem reescrevê-los automaticamente.
+- [x] Cobrir a seleção de modelo e o escopo de tópicos aplicáveis com testes e validação visual no negócio existente.
+- [ ] Validar com um novo modelo real anexado a análise de tópicos, a seleção da minuta e a sugestão em um capítulo aplicável.
+- [ ] Disponibilizar exportação do contrato consolidado em Word e PDF após a revisão das sugestões de IA.
+- [ ] Manter o Word como arquivo editável e gerar um PDF fiel ao conteúdo consolidado da minuta selecionada.
+- [ ] Permitir analisar por IA uma certidão anexada, extraindo resumo, achados e nível de atenção como apoio à diligência.
+- [ ] Exibir na ficha da certidão o resultado da análise assistida e sua ressalva de revisão jurídica humana.
+- [ ] Registrar e exibir nas propostas os marcos de enviada, visualizada e aceita ou recusada pelas partes.
+- [ ] Cobrir com testes e validar visualmente exportação, análise documental e rastreio de propostas sem criar dados fictícios.
+- [ ] Sincronizar o estado atual do ImobLegal com o repositório GitHub rrfraphael-ship-it/juridico.

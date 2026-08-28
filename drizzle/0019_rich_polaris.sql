@@ -1,0 +1,1 @@
+ALTER TABLE `contract_templates` ADD `topicApplicability` json;

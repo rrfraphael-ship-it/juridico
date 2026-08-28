@@ -1,0 +1,1 @@
+ALTER TABLE `documents` MODIFY COLUMN `category` enum('partes','imovel','certidoes','municipal','condominio','contrato','financeiro','fechamento','outro') NOT NULL DEFAULT 'outro';

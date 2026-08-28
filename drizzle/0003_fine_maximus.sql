@@ -1,0 +1,1 @@
+ALTER TABLE `obligations` ADD `lastAlertedAt` timestamp;
