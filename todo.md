@@ -155,4 +155,5 @@
 - [x] Cobrir com testes e validar visualmente exportação, análise documental e rastreio de propostas sem criar dados fictícios.
 - [ ] Validar com dados reais a exportação de uma minuta, a leitura de uma certidão e os marcos de visualização e resposta de uma proposta.
 - [x] Sincronizar o estado atual do ImobLegal com o repositório GitHub rrfraphael-ship-it/juridico.
-- [ ] Sincronizar o checkpoint atual c757bc0b com o repositório GitHub rrfraphael-ship-it/juridico.
+- [x] Sincronizar o checkpoint atual c757bc0b com o repositório GitHub rrfraphael-ship-it/juridico.
+- [ ] Sincronizar o checkpoint 21b57231 com o repositório GitHub rrfraphael-ship-it/juridico.
