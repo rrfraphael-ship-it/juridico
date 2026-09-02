@@ -110,6 +110,7 @@ export const proposals = mysqlTable(
     futureParties: json("futureParties").notNull(),
     accessToken: varchar("accessToken", { length: 64 }).notNull().unique(),
     recipientName: varchar("recipientName", { length: 180 }),
+    viewedAt: timestamp("viewedAt"),
     respondedBy: varchar("respondedBy", { length: 180 }),
     responseNote: text("responseNote"),
     respondedAt: timestamp("respondedAt"),

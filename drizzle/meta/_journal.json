@@ -141,6 +141,13 @@
       "when": 1787882372653,
       "tag": "0019_rich_polaris",
       "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "5",
+      "when": 1787885215108,
+      "tag": "0020_narrow_mattie_franklin",
+      "breakpoints": true
     }
   ]
 }

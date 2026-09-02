@@ -147,10 +147,12 @@
 - [x] Preservar os capítulos do modelo sem dados aplicáveis, sem reescrevê-los automaticamente.
 - [x] Cobrir a seleção de modelo e o escopo de tópicos aplicáveis com testes e validação visual no negócio existente.
 - [ ] Validar com um novo modelo real anexado a análise de tópicos, a seleção da minuta e a sugestão em um capítulo aplicável.
-- [ ] Disponibilizar exportação do contrato consolidado em Word e PDF após a revisão das sugestões de IA.
-- [ ] Manter o Word como arquivo editável e gerar um PDF fiel ao conteúdo consolidado da minuta selecionada.
-- [ ] Permitir analisar por IA uma certidão anexada, extraindo resumo, achados e nível de atenção como apoio à diligência.
-- [ ] Exibir na ficha da certidão o resultado da análise assistida e sua ressalva de revisão jurídica humana.
-- [ ] Registrar e exibir nas propostas os marcos de enviada, visualizada e aceita ou recusada pelas partes.
-- [ ] Cobrir com testes e validar visualmente exportação, análise documental e rastreio de propostas sem criar dados fictícios.
-- [ ] Sincronizar o estado atual do ImobLegal com o repositório GitHub rrfraphael-ship-it/juridico.
+- [x] Disponibilizar exportação do contrato consolidado em Word e PDF após a revisão das sugestões de IA.
+- [x] Manter o Word como arquivo editável e gerar um PDF fiel ao conteúdo consolidado da minuta selecionada.
+- [x] Permitir analisar por IA uma certidão anexada, extraindo resumo, achados e nível de atenção como apoio à diligência.
+- [x] Exibir na ficha da certidão o resultado da análise assistida e sua ressalva de revisão jurídica humana.
+- [x] Registrar e exibir nas propostas os marcos de enviada, visualizada e aceita ou recusada pelas partes.
+- [x] Cobrir com testes e validar visualmente exportação, análise documental e rastreio de propostas sem criar dados fictícios.
+- [ ] Validar com dados reais a exportação de uma minuta, a leitura de uma certidão e os marcos de visualização e resposta de uma proposta.
+- [x] Sincronizar o estado atual do ImobLegal com o repositório GitHub rrfraphael-ship-it/juridico.
+- [ ] Sincronizar o checkpoint atual c757bc0b com o repositório GitHub rrfraphael-ship-it/juridico.

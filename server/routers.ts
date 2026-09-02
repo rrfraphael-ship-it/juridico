@@ -213,7 +213,7 @@ export const appRouter = router({
       const proposal = (await db.select().from(proposals).where(and(eq(proposals.id, input.proposalId), eq(proposals.ownerId, ctx.user.id))).limit(1))[0];
       if (!proposal) throw new TRPCError({ code: "NOT_FOUND", message: "Proposta não encontrada." });
       if (proposal.status === "convertida") throw new TRPCError({ code: "CONFLICT", message: "Esta proposta já foi convertida em negócio e não pode mais ser editada." });
-      await db.update(proposals).set({ title: input.title, transactionType: input.transactionType, propertyAddress: input.propertyAddress, propertyIdentification: input.propertyIdentification || null, offerAmount: input.offerAmount ?? null, paymentMethod: input.paymentMethod || null, paymentFlow: input.paymentFlow || null, conditions: input.conditions || null, expiresAt: input.expiresAt ? new Date(input.expiresAt) : null, recipientName: input.recipientName || null, futureParties: input.futureParties, status: "rascunho", respondedBy: null, responseNote: null, respondedAt: null }).where(eq(proposals.id, proposal.id));
+      await db.update(proposals).set({ title: input.title, transactionType: input.transactionType, propertyAddress: input.propertyAddress, propertyIdentification: input.propertyIdentification || null, offerAmount: input.offerAmount ?? null, paymentMethod: input.paymentMethod || null, paymentFlow: input.paymentFlow || null, conditions: input.conditions || null, expiresAt: input.expiresAt ? new Date(input.expiresAt) : null, recipientName: input.recipientName || null, futureParties: input.futureParties, status: "rascunho", viewedAt: null, respondedBy: null, responseNote: null, respondedAt: null }).where(eq(proposals.id, proposal.id));
       return { success: true };
     }),
     share: protectedProcedure.input(z.object({ proposalId: z.number().int().positive() })).mutation(async ({ ctx, input }) => {
@@ -223,7 +223,7 @@ export const appRouter = router({
       if (!proposal) throw new TRPCError({ code: "NOT_FOUND", message: "Proposta não encontrada." });
       if (proposal.status === "convertida") throw new TRPCError({ code: "CONFLICT", message: "A proposta convertida não pode mais ser compartilhada." });
       if (proposal.expiresAt && proposal.expiresAt.getTime() < Date.now()) throw new TRPCError({ code: "BAD_REQUEST", message: "A validade da proposta expirou. Atualize-a antes de compartilhar." });
-      if (proposal.status === "rascunho") await db.update(proposals).set({ status: "enviada" }).where(eq(proposals.id, proposal.id));
+      if (proposal.status === "rascunho") await db.update(proposals).set({ status: "enviada", viewedAt: null }).where(eq(proposals.id, proposal.id));
       return { path: `/proposta/${proposal.accessToken}` };
     }),
     convertToDeal: protectedProcedure.input(z.object({ proposalId: z.number().int().positive() })).mutation(async ({ ctx, input }) => {
@@ -290,6 +290,11 @@ export const appRouter = router({
       assertDb(db);
       const proposal = (await db.select().from(proposals).where(eq(proposals.accessToken, input.token)).limit(1))[0];
       if (!proposal || (proposal.expiresAt && proposal.expiresAt.getTime() < Date.now())) throw new TRPCError({ code: "NOT_FOUND", message: "Este link de proposta não está disponível." });
+      if (proposal.status === "enviada" && !proposal.viewedAt) {
+        const viewedAt = new Date();
+        await db.update(proposals).set({ viewedAt }).where(eq(proposals.id, proposal.id));
+        return { ...proposal, viewedAt };
+      }
       return proposal;
     }),
     respondPublic: publicProcedure.input(z.object({ token: z.string().min(12), status: z.enum(["aceita", "recusada"]), respondedBy: z.string().trim().min(3).max(180), responseNote: z.string().trim().max(3000).optional() })).mutation(async ({ input }) => {
